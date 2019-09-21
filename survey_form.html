@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+ <link rel="stylesheet" href="survey_form.css">
+<h1 id="title">Survey Form</h1>
+</head>
+<body >
+  <div class="white " >
+
+<p style="text-align: center" id="description">Let us know how we can improve freeCodeCamp</p></br></br>
+
+    <form id="survey-form">
+ 
+      <label class="label">*Name : </label>
+      <label id="name-label">
+  <input class="input_tab" type="text" id="name" placeholder="Enter your name" required></br></br>
+  </label>
+
+<label class="label">*E-Mail ID : </label>
+  <label  id="email-label" >
+ <input  class="input_tab"
+        type="email" id="email" placeholder="Enter your email" required></br></br>
+</label>
+
+<label class="label">*Age : </label>
+  <label id="number-label" >
+<input class="input_tab" type="number" id="number" placeholder="Age" min="18" max="45" required></br></br>
+    </label>
+
+<label class="label" style="width: 40% ">*Which option best describes your current role? : </label>
+ 
+<select id="dropdown" class="input_tab label" style="width: 100px ; height:30px; padding: 0px;">
+  <option value="student">student</option>
+  <option value="job">Full time job</option>
+  <option value="learner">Full time learner </option>
+  <option value="other">other</option>
+  </select></br></br>
+
+<label class="label" style="width: 50%;">*How likely is that you would recommend freeCodeCamp to a friend? : </label></br>
+
+<label id="recommend"  class=" label" style="width: 20%; text-align: left;" required>
+<input type="radio" name="recommend" value="1"> definitely</br>
+<input type="radio" name="recommend" value="2"> may be not</br>
+<input type="radio" name="recommend" value="3"> not sure</br></br>
+</label>
+</br>
+<label class="label" style="width: 40%; text-align:left;">*Things that should be improved in the future</br>(Check all that apply):</label></br>
+
+
+<label id="improv" class="label" style="width: 20%; text-align: left;" >
+  <input type="checkbox" name="improv" value="1">Front-end Projects</br>
+  <input type="checkbox" name="improv" value="2">Back-end Projects</br>
+  <input type="checkbox" name="improv" value="3">Data Visualization</br>
+  <input type="checkbox" name="improv" value="4">Challenges</br>
+  <input type="checkbox" name="improv" value="5">Open Source Community</br>
+  <input type="checkbox" name="improv" value="6">Gitter help rooms</br>
+  <input type="checkbox" name="improv" value="7">Videos</br></br>
+</label>
+</br>
+
+
+<div class="label">Comment</div>
+
+<textarea    style=": left;" placeholder="Enter your comments"  ></textarea></br></br>
+
+
+<input type="submit"  id="submit">
+</form>
+</div>
+</body>
+</html>
